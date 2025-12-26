@@ -1,5 +1,5 @@
 {
-  "name": "bgone",
+  "name": "@neplex/bgone",
   "version": "1.0.0",
   "description": "Node.js library to remove solid background colors from the images without AI/ML.",
   "main": "index.js",
