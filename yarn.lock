@@ -1610,6 +1610,8 @@ __metadata:
     prettier: "npm:^3.6.2"
     tinybench: "npm:^6.0.0"
     typescript: "npm:^5.9.2"
+  bin:
+    bgone: ./cli.js
   languageName: unknown
   linkType: soft
 

@@ -9,9 +9,7 @@
   },
   "author": "Neplex <info@neplextech.com>",
   "license": "MIT",
-  "bin": {
-    "bgone": "./cli.js"
-  },
+  "bin": "./cli.js",
   "browser": "browser.js",
   "keywords": [
     "bgone",
