@@ -29,6 +29,8 @@ yarn add bgone
 pnpm add bgone
 # or
 bun add bgone
+# or
+deno add npm:bgone
 ```
 
 ## Quick Start
