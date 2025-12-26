@@ -903,6 +903,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@neplex/bgone@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@neplex/bgone@workspace:."
+  dependencies:
+    "@emnapi/core": "npm:^1.5.0"
+    "@emnapi/runtime": "npm:^1.5.0"
+    "@napi-rs/cli": "npm:^3.2.0"
+    "@oxc-node/core": "npm:^0.0.35"
+    "@taplo/cli": "npm:^0.7.0"
+    "@tybys/wasm-util": "npm:^0.10.0"
+    "@types/node": "npm:^25.0.3"
+    ava: "npm:^6.4.1"
+    chalk: "npm:^5.6.2"
+    commander: "npm:^14.0.2"
+    husky: "npm:^9.1.7"
+    lint-staged: "npm:^16.1.6"
+    npm-run-all2: "npm:^8.0.4"
+    oxlint: "npm:^1.14.0"
+    prettier: "npm:^3.6.2"
+    tinybench: "npm:^6.0.0"
+    typescript: "npm:^5.9.2"
+  bin:
+    bgone: ./cli.js
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1588,32 +1614,6 @@ __metadata:
   checksum: 10c0/9f8ae8d1b06142bcfb9ef6625226b5e50348bb11210f266660eddcf9734e0db6f9afc4cb48397ee3f5ac0a3728f3ae401cdeea88413f7bed748a71db84657be2
   languageName: node
   linkType: hard
-
-"bgone@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "bgone@workspace:."
-  dependencies:
-    "@emnapi/core": "npm:^1.5.0"
-    "@emnapi/runtime": "npm:^1.5.0"
-    "@napi-rs/cli": "npm:^3.2.0"
-    "@oxc-node/core": "npm:^0.0.35"
-    "@taplo/cli": "npm:^0.7.0"
-    "@tybys/wasm-util": "npm:^0.10.0"
-    "@types/node": "npm:^25.0.3"
-    ava: "npm:^6.4.1"
-    chalk: "npm:^5.6.2"
-    commander: "npm:^14.0.2"
-    husky: "npm:^9.1.7"
-    lint-staged: "npm:^16.1.6"
-    npm-run-all2: "npm:^8.0.4"
-    oxlint: "npm:^1.14.0"
-    prettier: "npm:^3.6.2"
-    tinybench: "npm:^6.0.0"
-    typescript: "npm:^5.9.2"
-  bin:
-    bgone: ./cli.js
-  languageName: unknown
-  linkType: soft
 
 "bindings@npm:^1.4.0":
   version: 1.5.0
