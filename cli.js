@@ -11,7 +11,7 @@ program
   .name('bgone')
   .description('Remove solid background colors from images')
   .version(packageJson.version)
-  .argument('<input>', 'Input image file')
+  .argument('<input>', 'The input image file')
   .argument('[output]', 'Output image file (defaults to input-bgone.png)')
   .option('-b, --bg <color>', 'Background color to remove (hex, e.g. #ffffff or fff)')
   .option('-f, --fg <colors...>', 'Foreground colors (hex or "auto" for deduction)')
