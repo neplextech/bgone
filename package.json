@@ -16,7 +16,9 @@
     "background",
     "removal",
     "image",
-    "processing"
+    "processing",
+    "background-removal",
+    "removebg"
   ],
   "files": [
     "index.d.ts",

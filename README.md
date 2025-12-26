@@ -22,22 +22,22 @@ _Example image from [Unsplash](https://unsplash.com/photos/orange-fire-on-black-
 ## Installation
 
 ```bash
-npm install bgone
+npm install @neplex/bgone
 # or
-yarn add bgone
+yarn add @neplex/bgone
 # or
-pnpm add bgone
+pnpm add @neplex/bgone
 # or
-bun add bgone
+bun add @neplex/bgone
 # or
-deno add npm:bgone
+deno add npm:@neplex/bgone
 ```
 
 ## Quick Start
 
 ```typescript
 import { readFileSync, writeFileSync } from 'fs';
-import { processImage, processImageSync, detectBackgroundColor } from 'bgone';
+import { processImage, processImageSync, detectBackgroundColor } from '@neplex/bgone';
 
 const input = readFileSync('input.png');
 
@@ -63,16 +63,13 @@ You can use bgone directly from the command line:
 
 ```bash
 # Using npx (no installation required)
-npx bgone input.png
-
-# Or if installed globally
-bgone input.png
+npx @neplex/bgone input.png
 ```
 
 ### CLI Options
 
 ```
-Usage: bgone [options] <input> [output]
+Usage: npx @neplex/bgone [options] <input> [output]
 
 Remove solid background colors from images
 
@@ -95,37 +92,37 @@ Options:
 
 ```bash
 # Fully automatic - detects background and removes it
-npx bgone input.png
+npx @neplex/bgone input.png
 
 # Specify output path
-npx bgone input.png output.png
+npx @neplex/bgone input.png output.png
 
 # With explicit background color
-npx bgone input.png --bg=#ffffff
-npx bgone input.png -b fff
+npx @neplex/bgone input.png --bg=#ffffff
+npx @neplex/bgone input.png -b fff
 
 # With foreground color for optimized opacity
-npx bgone input.png --fg=#ff0000
+npx @neplex/bgone input.png --fg=#ff0000
 
 # Multiple foreground colors
-npx bgone input.png --fg ff0000 00ff00 0000ff
+npx @neplex/bgone input.png --fg ff0000 00ff00 0000ff
 
 # Foreground color deduction
-npx bgone input.png --fg auto
-npx bgone input.png --fg auto auto --bg ffffff
+npx @neplex/bgone input.png --fg auto
+npx @neplex/bgone input.png --fg auto auto --bg ffffff
 
 # Mix known and unknown colors
-npx bgone input.png --fg ff0000 auto
+npx @neplex/bgone input.png --fg ff0000 auto
 
 # Strict mode with foreground colors
-npx bgone input.png --strict --fg=#ff0000
-npx bgone input.png -s --fg auto
+npx @neplex/bgone input.png --strict --fg=#ff0000
+npx @neplex/bgone input.png -s --fg auto
 
 # With threshold and trim
-npx bgone input.png -f f00 0f0 00f -b fff -t 0.1 --trim
+npx @neplex/bgone input.png -f f00 0f0 00f -b fff -t 0.1 --trim
 
 # Only detect background color
-npx bgone input.png --detect
+npx @neplex/bgone input.png --detect
 ```
 
 ## API Reference
