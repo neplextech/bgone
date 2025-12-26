@@ -235,13 +235,13 @@ pub fn deduce_unknown_colors(
   ];
 
   for color in standard_colors {
-    if !known_colors.contains(&color) && color != background_color {
-      if !all_candidates
+    if !known_colors.contains(&color)
+      && color != background_color
+      && !all_candidates
         .iter()
         .any(|&c| color_distance(normalize_color(c), normalize_color(color)) < 0.01)
-      {
-        all_candidates.push(color);
-      }
+    {
+      all_candidates.push(color);
     }
   }
 
